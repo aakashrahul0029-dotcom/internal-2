@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An unofficial cinematic BGMI fan experience featuring maps, weapons, game modes, esports and interactive challenges.">
+  <meta name="theme-color" content="#090909">
+  <title>BGMI — Drop Into The Unknown</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader" aria-label="Loading website">
+    <div class="loader-mark">B<span>G</span>MI</div>
+    <div class="loader-line"><span id="loaderBar"></span></div>
+    <p>PREPARING THE BATTLEFIELD <b id="loaderPercent">0%</b></p>
+  </div>
+  <div class="scroll-progress"><span id="scrollProgress"></span></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="noise-layer" aria-hidden="true"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top cinematic-nav">
+    <div class="container">
+      <a class="navbar-brand brand-lockup" href="#home" aria-label="BGMI home"><span class="brand-symbol">B</span><span>BGMI<small>DROP INTO THE UNKNOWN</small></span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="#maps">MAPS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#arsenal">ARSENAL</a></li>
+          <li class="nav-item"><a class="nav-link" href="#modes">MODES</a></li>
+          <li class="nav-item"><a class="nav-link" href="#esports">ESPORTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">GALLERY</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-blood btn-nav" href="#download">ENTER THE BATTLE <i class="bi bi-arrow-up-right"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-bg"></div><div class="hero-vignette"></div><div class="hero-grid"></div>
+      <div class="embers" id="embers" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="eyebrow reveal"><span class="eyebrow-line"></span> THE BATTLE STARTS NOW <span class="eyebrow-line"></span></div>
+        <h1 class="hero-title reveal"><span>BATTLEGROUNDS</span><strong>MOBILE <em>INDIA</em></strong></h1>
+        <p class="hero-subtitle reveal">ONE BATTLE. ONE SURVIVOR.<br><span>INFINITE POSSIBILITIES.</span></p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-blood btn-lg" href="#maps">EXPLORE BATTLEGROUNDS <i class="bi bi-arrow-right"></i></a>
+          <button class="btn btn-outline-light btn-lg trailer-trigger"><i class="bi bi-play-fill"><a href="https://youtu.be/hfjazBN0DwA?si=8r-uxq7ImXVLFZhi">VISIT TRAILER</a></i></button>
+        </div>
+        <div class="hero-meta reveal"><span><i class="bi bi-crosshair"></i> DROP. LOOT. SURVIVE.</span><span class="meta-divider"></span><span>UNOFFICIAL FAN-MADE EXPERIENCE</span></div>
+      </div>
+      <a href="#about" class="scroll-cue"><span></span> SCROLL TO DEPLOY</a>
+      <div class="hero-coordinate">LAT 28°36' / LONG 77°12' <b>● LIVE ZONE</b></div>
+    </section>
+
+    <section id="about" class="section-pad about-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal">
+            <div class="section-kicker">01 / THE EXPERIENCE</div>
+            <h2 class="section-title">THIS IS NOT<br><em>JUST A GAME.</em></h2>
+            <p class="lead-copy">Gear up, squad up and enter an ever-shifting battleground. Every drop is a new story. Every decision could make the difference between survival and defeat.</p>
+            <p class="body-copy">Explore the world of BGMI through this unofficial fan-made showcase. Discover maps, learn your arsenal, sharpen your strategy and get ready for the next match.</p>
+            <a href="#modes" class="text-link">DISCOVER THE GAME <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+          <div class="col-lg-6 reveal">
+            <div class="about-visual">
+              <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1200&q=85" alt="Dramatic smoky landscape at dusk">
+              <div class="about-stamp"><strong>100</strong><span>PLAYERS.<br>ONE WINNER.</span></div>
+              <div class="visual-caption">SURVIVAL IS A CHOICE.</div>
+            </div>
+          </div>
+        </div>
+        <div class="stat-strip row g-0 reveal">
+          <div class="col-6 col-lg-3 stat-item"><strong class="counter" data-count="5">0</strong><span>MAP SPOTLIGHTS</span></div>
+          <div class="col-6 col-lg-3 stat-item"><strong class="counter" data-count="8">0</strong><span>WEAPON PROFILES</span></div>
+          <div class="col-6 col-lg-3 stat-item"><strong class="counter" data-count="6">0</strong><span>GAMEPLAY MODES</span></div>
+          <div class="col-6 col-lg-3 stat-item"><strong>∞</strong><span>WAYS TO PLAY</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="maps" class="section-pad maps-section">
+      <div class="container">
+        <div class="section-heading reveal"><div><div class="section-kicker">02 / CHOOSE YOUR DROP</div><h2 class="section-title">THE <em>BATTLEFIELDS</em></h2></div><p>Every terrain tells a different story.<br>Where will your squad land?</p></div>
+        <div class="map-grid">
+          <article class="map-card map-large reveal" data-map="Erangel"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=85" alt="Green island landscape"><div class="map-overlay"></div><div class="map-content"><span class="map-index">01 / CLASSIC</span><h3>ERANGEL</h3><p>Rolling fields. Abandoned towns. A classic battleground.</p><button class="map-open" data-map="Erangel">INTEL & LANDING SPOTS <i class="bi bi-arrow-up-right"></i></button></div></article>
+          <article class="map-card reveal" data-map="Miramar"><img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1000&q=85" alt="Desert dunes"><div class="map-overlay"></div><div class="map-content"><span class="map-index">02 / DESERT</span><h3>MIRAMAR</h3><p>Long sightlines. High-risk rotations.</p><button class="map-open" data-map="Miramar">EXPLORE <i class="bi bi-arrow-up-right"></i></button></div></article>
+          <article class="map-card reveal" data-map="Sanhok"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=85" alt="Dense tropical forest"><div class="map-overlay"></div><div class="map-content"><span class="map-index">03 / JUNGLE</span><h3>SANHOK</h3><p>Dense cover. Fast encounters.</p><button class="map-open" data-map="Sanhok">EXPLORE <i class="bi bi-arrow-up-right"></i></button></div></article>
+          <article class="map-card reveal" data-map="Vikendi"><img src="https://images.unsplash.com/photo-1517299321609-52687d1bc55a?auto=format&fit=crop&w=1000&q=85" alt="Snowy mountain range"><div class="map-overlay"></div><div class="map-content"><span class="map-index">04 / FROZEN</span><h3>VIKENDI</h3><p>Cold terrain. Tactical movement.</p><button class="map-open" data-map="Vikendi">EXPLORE <i class="bi bi-arrow-up-right"></i></button></div></article>
+          <article class="map-card reveal" data-map="Livik"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=85" alt="Mountain lake landscape"><div class="map-overlay"></div><div class="map-content"><span class="map-index">05 / COMPACT</span><h3>LIVIK</h3><p>Quick rotations. Relentless action.</p><button class="map-open" data-map="Livik">EXPLORE <i class="bi bi-arrow-up-right"></i></button></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="arsenal" class="section-pad arsenal-section">
+      <div class="container">
+        <div class="section-heading reveal"><div><div class="section-kicker">03 / KNOW YOUR TOOLS</div><h2 class="section-title">LOCK. LOAD. <em>DOMINATE.</em></h2></div><p>Find your playstyle. Build your<br>ideal loadout.</p></div>
+        <div class="arsenal-toolbar reveal">
+          <div class="filter-group" id="weaponFilters"><button class="filter-btn active" data-filter="all">ALL</button><button class="filter-btn" data-filter="AR">ASSAULT</button><button class="filter-btn" data-filter="SR">SNIPER</button><button class="filter-btn" data-filter="LMG">LMG</button><button class="filter-btn" data-filter="SMG">SMG</button></div>
+          <input id="weaponSearch" class="weapon-search" type="search" placeholder="SEARCH ARSENAL..." aria-label="Search weapons">
+        </div>
+        <div class="row g-3" id="weaponGrid">
+          <div class="col-6 col-lg-3 weapon-col" data-category="AR" data-name="M416"><article class="weapon-card"><div class="weapon-art"><span class="weapon-type">ASSAULT RIFLE</span><img src="m416.png" alt="Tactical rifle"></div><div class="weapon-info"><h3>M416</h3><p>Versatile • Adaptable</p><button class="weapon-details" data-weapon="M416">VIEW INTEL <i class="bi bi-arrow-right"></i></button></div></article></div>
+          <div class="col-6 col-lg-3 weapon-col" data-category="AR" data-name="AKM"><article class="weapon-card"><div class="weapon-art"><span class="weapon-type">ASSAULT RIFLE</span><img src="AK47.jpg" alt="Rifle close-up"></div><div class="weapon-info"><h3>AKM</h3><p>Heavy impact • Power</p><button class="weapon-details" data-weapon="AKM">VIEW INTEL <i class="bi bi-arrow-right"></i></button></div></article></div>
+          <div class="col-6 col-lg-3 weapon-col" data-category="SR" data-name="AWM"><article class="weapon-card"><div class="weapon-art"><span class="weapon-type">SNIPER RIFLE</span><img src="awm.jpeg" alt="Precision rifle"></div><div class="weapon-info"><h3>AWM</h3><p>Precision • Long range</p><button class="weapon-details" data-weapon="AWM">VIEW INTEL <i class="bi bi-arrow-right"></i></button></div></article></div>
+          <div class="col-6 col-lg-3 weapon-col" data-category="SR" data-name="M24"><article class="weapon-card"><div class="weapon-art"><span class="weapon-type">SNIPER RIFLE</span><img src="m24.jpg" alt="Long rifle"></div><div class="weapon-info"><h3>M24</h3><p>Control • Accuracy</p><button class="weapon-details" data-weapon="M24">VIEW INTEL <i class="bi bi-arrow-right"></i></button></div></article></div>
+          <div class="col-6 col-lg-3 weapon-col" data-category="AR" data-name="GROZA"><article class="weapon-card"><div class="weapon-art"><span class="weapon-type">ASSAULT RIFLE</span><img src="groza.png" alt="Assault rifle"></div><div class="weapon-info"><h3>GROZA</h3><p>Close combat • Force</p><button class="weapon-details" data-weapon="GROZA">VIEW INTEL <i class="bi bi-arrow-right"></i></button></div></article></div>
+          <div class="col-6 col-lg-3 weapon-col" data-category="LMG" data-name="DP-28"><article class="weapon-card"><div class="weapon-art"><span class="weapon-type">LMG</span><img src="Dp28.jpg"></div><div class="weapon-info"><h3>DP-28</h3><p>Sustained fire • Support</p><button class="weapon-details" data-weapon="DP-28">VIEW INTEL <i class="bi bi-arrow-right"></i></button></div></article></div>
+          <div class="col-6 col-lg-3 weapon-col" data-category="SMG" data-name="UMP45"><article class="weapon-card"><div class="weapon-art"><span class="weapon-type">SMG</span><img src="ump.jpg" alt="Compact firearm"></div><div class="weapon-info"><h3>UMP45</h3><p>Agility • Close range</p><button class="weapon-details" data-weapon="UMP45">VIEW INTEL <i class="bi bi-arrow-right"></i></button></div></article></div>
+          <div class="col-6 col-lg-3 weapon-col" data-category="AR" data-name="SCAR-L"><article class="weapon-card"><div class="weapon-art"><span class="weapon-type">ASSAULT RIFLE</span><img src="SCAR.jpg" alt="Modern rifle"></div><div class="weapon-info"><h3>SCAR-L</h3><p>Steady • Beginner friendly</p><button class="weapon-details" data-weapon="SCAR-L">VIEW INTEL <i class="bi bi-arrow-right"></i></button></div></article></div>
+        </div>
+        <div class="compare-panel reveal">
+          <div><div class="section-kicker">LOADOUT LAB</div><h3>COMPARE YOUR <em>ARSENAL</em></h3><p>Choose two weapons to compare their playstyle.</p></div>
+          <div class="compare-controls"><select id="weaponA" aria-label="First weapon"><option>M416</option><option>AKM</option><option>AWM</option><option>M24</option><option>GROZA</option><option>DP-28</option><option>UMP45</option><option>SCAR-L</option></select><span>VS</span><select id="weaponB" aria-label="Second weapon"><option>AKM</option><option>M416</option><option>AWM</option><option>M24</option><option>GROZA</option><option>DP-28</option><option>UMP45</option><option>SCAR-L</option></select><button id="compareBtn" class="btn btn-blood">COMPARE</button></div>
+          <div id="compareResult" class="compare-result" aria-live="polite">Select your matchup and hit compare.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="modes" class="section-pad modes-section">
+      <div class="container">
+        <div class="section-heading reveal"><div><div class="section-kicker">04 / PICK YOUR FIGHT</div><h2 class="section-title">MULTIPLE WAYS TO <em>ENGAGE.</em></h2></div><p>Different rules. Different pressure.<br>Same goal: survive.</p></div>
+        <div class="mode-grid">
+          <article class="mode-card mode-feature reveal"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1200&q=85" alt="Battlefield at dusk"><div class="mode-overlay"></div><div class="mode-text"><span>01 / THE CLASSIC</span><h3>CLASSIC<br>BATTLE ROYALE</h3><p>Drop in, gear up and outlast the competition.</p></div></article>
+          <article class="mode-card reveal"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=85" alt="Mountain landscape"><div class="mode-overlay"></div><div class="mode-text"><span>02 / COMPETITIVE</span><h3>RANKED</h3><p>Climb the ladder. Prove your skill.</p></div></article>
+          <article class="mode-card reveal"><img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=900&q=85" alt="Ocean waves"><div class="mode-overlay"></div><div class="mode-text"><span>03 / FAST ACTION</span><h3>ARENA</h3><p>Quick rounds. Close-quarters action.</p></div></article>
+          <article class="mode-card reveal"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=85" alt="Mountain night sky"><div class="mode-overlay"></div><div class="mode-text"><span>04 / SQUAD PLAY</span><h3>TEAM DEATHMATCH</h3><p>Coordinate, communicate, conquer.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="character-section">
+      <div class="character-bg"></div><div class="container position-relative">
+        <div class="row align-items-center min-vh-50">
+          <div class="col-lg-7 reveal"><div class="section-kicker">05 / THE FIGHTER</div><h2 class="section-title">BUILT FOR<br><em>THE LAST STAND.</em></h2><p class="lead-copy">Your squad is your strength. Your choices define your legend. Enter the battleground ready for anything.</p><a href="#tips" class="btn btn-outline-light">PREPARE YOUR STRATEGY <i class="bi bi-arrow-right"></i></a></div>
+          <div class="col-lg-5 character-side reveal"><div class="character-emblem"><i class="bi bi-shield-shaded"></i><span>NO ONE LEFT BEHIND</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="esports" class="section-pad esports-section">
+      <div class="container">
+        <div class="section-heading reveal"><div><div class="section-kicker">06 / THE COMPETITIVE FRONTLINE</div><h2 class="section-title">LEGENDS ARE <em>MADE HERE.</em></h2></div><p>Every point matters.<br>Every match writes history.</p></div>
+        <div class="esports-banner reveal"><div><span class="section-kicker">THE NEXT GENERATION OF COMPETITION</span><h3>RISE THROUGH<br>THE <em>RANKS.</em></h3><p>Track the demo leaderboard and imagine your name at the top.</p></div><div class="trophy"><i class="bi bi-trophy-fill"></i><span>CHAMPION<br>MINDSET</span></div></div>
+        <div class="leaderboard-wrap reveal"><div class="leaderboard-head"><h3>FIELD REPORT <small>DEMO LEADERBOARD</small></h3><label>SORT BY <select id="leaderSort"><option value="points">POINTS</option><option value="kills">KILLS</option><option value="name">PLAYER</option></select></label></div><div class="table-responsive"><table class="table leaderboard-table"><thead><tr><th>RANK</th><th>PLAYER</th><th>TEAM</th><th>KILLS</th><th>POINTS</th></tr></thead><tbody id="leaderboardBody"></tbody></table></div><p class="demo-note"><i class="bi bi-info-circle"></i> Fictional sample data for demonstration only. Not live BGMI rankings.</p></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section-pad gallery-section">
+      <div class="container">
+        <div class="section-heading reveal"><div><div class="section-kicker">07 / MOMENTS IN THE ZONE</div><h2 class="section-title">THE <em>AFTERMATH.</em></h2></div><p>Captured moments from the<br>world of battle royale.</p></div>
+        <div class="gallery-filters reveal"><button class="filter-btn active" data-gallery="all">ALL FRAMES</button><button class="filter-btn" data-gallery="terrain">TERRAIN</button><button class="filter-btn" data-gallery="combat">COMBAT MOOD</button><button class="filter-btn" data-gallery="victory">VICTORY</button></div>
+        <div class="gallery-grid">
+          <button class="gallery-item gallery-tall reveal" data-category="terrain" data-full="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=90"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Mountain terrain"><span>01 / THE DROP</span></button>
+          <button class="gallery-item reveal" data-category="combat" data-full="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1800&q=90"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=800&q=80" alt="Smoky dusk"><span>02 / INTO THE SMOKE</span></button>
+          <button class="gallery-item reveal" data-category="terrain" data-full="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1800&q=90"><img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=800&q=80" alt="Desert terrain"><span>03 / OPEN GROUND</span></button>
+          <button class="gallery-item reveal" data-category="victory" data-full="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1800&q=90"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" alt="Sunrise over a lake"><span>04 / GOLDEN HOUR</span></button>
+          <button class="gallery-item reveal" data-category="combat" data-full="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=90"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80" alt="Dark forest"><span>05 / STAY IN COVER</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="trailer-section">
+      <div class="trailer-bg"></div><div class="trailer-content reveal"><span class="section-kicker">THE BATTLE NEVER STOPS</span><h2>READY TO <em>DROP IN?</em></h2><button class="play-trailer trailer-trigger" aria-label="Open trailer"><i class="bi bi-play-fill"></i></button><p>WATCH THE BATTLEFIELD COME ALIVE</p></div>
+    </section>
+
+    <section id="tips" class="section-pad tips-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 reveal"><div class="section-kicker">08 / FIELD MANUAL</div><h2 class="section-title">PLAY SMART.<br><em>SURVIVE LONGER.</em></h2><p class="lead-copy">A good loadout helps. A sharp mind wins fights. Get a quick field tip before your next drop.</p><button class="btn btn-blood" id="newTip"><i class="bi bi-shuffle"></i> GENERATE PRO TIP</button></div>
+          <div class="col-lg-7 reveal"><div class="tip-card"><div class="tip-icon"><i class="bi bi-crosshair"></i></div><span>RANDOM FIELD INTEL</span><blockquote id="tipText">“Use cover before you use confidence. A smart rotation can win a fight before it begins.”</blockquote><div class="tip-count">FIELD NOTE <b id="tipNumber">01</b> / 06</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="survival-section section-pad">
+      <div class="container">
+        <div class="section-heading reveal"><div><div class="section-kicker">09 / MAKE THE CALL</div><h2 class="section-title">THE <em>FINAL CIRCLE.</em></h2></div><p>A tiny survival scenario.<br>Choose wisely.</p></div>
+        <div class="survival-box reveal"><div class="survival-status"><span><i class="bi bi-broadcast"></i> SIMULATION ACTIVE</span><span id="survivalStep">SCENARIO 01 / 03</span></div><h3 id="scenarioTitle">THE ZONE IS CLOSING.</h3><p id="scenarioText">Your squad is outside the safe zone. You spot a vehicle nearby, but enemy fire is coming from the ridge. What is your move?</p><div class="scenario-choices" id="scenarioChoices"><button class="scenario-choice" data-choice="0">SPRINT FOR THE VEHICLE</button><button class="scenario-choice" data-choice="1">SMOKE AND ROTATE TO COVER</button><button class="scenario-choice" data-choice="2">RETURN FIRE FROM OPEN GROUND</button></div><div class="scenario-feedback" id="scenarioFeedback" aria-live="polite">Make your decision to continue.</div><button class="btn btn-outline-light btn-sm mt-3" id="restartScenario">RESTART SIMULATION <i class="bi bi-arrow-counterclockwise"></i></button></div>
+      </div>
+    </section>
+
+    <section id="download" class="download-section">
+      <div class="download-bg"></div><div class="container position-relative text-center reveal"><div class="section-kicker">YOUR NEXT DROP IS WAITING</div><h2>THE ISLAND<br>IS <em>CALLING.</em></h2><p>Gear up. Squad up. Make your moment count.</p><a class="btn btn-blood btn-lg" href="https://www.battlegroundsmobileindia.com/" target="_blank" rel="noopener">VISIT OFFICIAL BGMI SITE <i class="bi bi-box-arrow-up-right"></i></a><small>Opens the official BGMI website in a new tab.</small></div>
+    </section>
+
+    <section id="faq" class="section-pad faq-section">
+      <div class="container">
+        <div class="section-heading reveal"><div><div class="section-kicker">10 / INTEL DESK</div><h2 class="section-title">MISSION <em>BRIEFING.</em></h2></div><p>Quick answers for<br>new recruits.</p></div>
+        <div class="accordion cinematic-accordion reveal" id="faqAccordion">
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">WHAT IS BGMI?</button></h3><div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Battlegrounds Mobile India (BGMI) is a multiplayer battle royale game for mobile devices. This website is an independent fan-made showcase, not an official BGMI property.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">WHERE CAN I FIND OFFICIAL GAME INFORMATION?</button></h3><div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Visit the official BGMI website using the link in the download section for current announcements, availability and support information.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">WHICH WEAPON SHOULD A BEGINNER TRY?</button></h3><div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Try a weapon that feels controllable in training, then practise recoil and target tracking. Weapon balance and stats can change with game updates.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">HOW CAN I IMPROVE MY GAMEPLAY?</button></h3><div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Practise consistently, communicate with your squad, learn map rotations and use cover. Review your decisions after each match.</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-pad contact-section">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5 reveal"><div class="section-kicker">11 / OPEN CHANNEL</div><h2 class="section-title">SEND A <em>FIELD REPORT.</em></h2><p class="lead-copy">Have an idea, feedback or a feature request for this fan project? Send a message.</p><div class="contact-detail"><i class="bi bi-envelope"></i><span>Fan project contact form<br><small>Demo only — no message is sent to a server.</small></span></div></div>
+          <div class="col-lg-7 reveal"><form id="contactForm" class="contact-form" novalidate><div class="row g-3"><div class="col-md-6"><label for="contactName">YOUR NAME</label><input id="contactName" class="form-control" required minlength="2" placeholder="Enter your name"></div><div class="col-md-6"><label for="contactEmail">EMAIL ADDRESS</label><input id="contactEmail" type="email" class="form-control" required placeholder="you@example.com"></div><div class="col-12"><label for="contactSubject">SUBJECT</label><input id="contactSubject" class="form-control" required placeholder="What's on your mind?"></div><div class="col-12"><label for="contactMessage">MESSAGE</label><textarea id="contactMessage" class="form-control" rows="5" required minlength="10" placeholder="Write your field report..."></textarea></div><div class="col-12 d-flex align-items-center gap-3 flex-wrap"><button class="btn btn-blood" type="submit">SEND MESSAGE <i class="bi bi-arrow-up-right"></i></button><span class="form-hint">All fields are required.</span></div></div></form></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-top"><a class="brand-lockup" href="#home"><span class="brand-symbol">B</span><span>BGMI<small>DROP INTO THE UNKNOWN</small></span></a><p>ONE BATTLE. ONE SURVIVOR.<br><em>INFINITE POSSIBILITIES.</em></p><a href="#home" class="back-top">BACK TO TOP <i class="bi bi-arrow-up"></i></a></div><div class="footer-bottom"><span>© 2025 FAN-MADE BGMI SHOWCASE. ALL RIGHTS RESERVED.</span><span>NOT AFFILIATED WITH KRAFTON OR BGMI.</span><div class="social-links"><a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a><a href="https://www.youtube.com/" aria-label="YouTube" target="_blank" rel="noopener"><i class="bi bi-youtube"></i></a><a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a></div></div></div></footer>
+
+  <div class="modal fade cinematic-modal" id="detailModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><span class="section-kicker" id="detailEyebrow">FIELD INTEL</span><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body"><h2 id="detailTitle">DETAILS</h2><p id="detailDescription"></p><div id="detailExtra" class="detail-extra"></div></div></div></div></div>
+  <div class="modal fade cinematic-modal" id="galleryModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content gallery-modal-content"><button type="button" class="btn-close btn-close-white gallery-close" data-bs-dismiss="modal" aria-label="Close"></button><button class="gallery-nav gallery-prev" aria-label="Previous image"><i class="bi bi-chevron-left"></i></button><img id="lightboxImage" src="" alt="Expanded gallery image"><button class="gallery-nav gallery-next" aria-label="Next image"><i class="bi bi-chevron-right"></i></button><div id="lightboxCaption"></div></div></div></div>
+  <div class="modal fade cinematic-modal" id="trailerModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content trailer-modal-content"><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button><div class="trailer-placeholder"><i class="bi bi-film"></i><h3>TRAILER SLOT</h3><p>Add an official or licensed BGMI trailer video URL in <code>script.js</code> to activate playback.</p></div></div></div></div>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3"><div id="siteToast" class="toast cinematic-toast" role="status"><div class="toast-body"><i class="bi bi-check-circle-fill"></i> <span id="toastMessage">Message</span><button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="toast" aria-label="Close"></button></div></div></div>
+  <button id="soundToggle" class="sound-toggle" aria-label="Toggle ambient sound" title="Sound effects toggle"><i class="bi bi-volume-mute"></i><span>SOUND OFF</span></button>
+  <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
